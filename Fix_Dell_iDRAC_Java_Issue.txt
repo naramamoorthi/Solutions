@@ -1,0 +1,8 @@
+Symptom: Unable to launch the Java Remote Console in IDRAC. You get a security error
+
+Backup the file below. File path varies with Java version
+C:\Program Files (x86)\Java\jre1.8.0_131\lib\security\java.security
+
+Edit the java.security file and remove MD5, MD5withRSA or DM5withDSA
+
+Edit the "jdk.jar.disabledAlgorithms" section of the java.security file and remove the weka algorithm that iDRAC is using.
