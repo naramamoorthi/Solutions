@@ -1,0 +1,5 @@
+netsh int ipv4 show dynamicport TCP
+netsh int ipv4 show dynamicport UDP
+
+netsh int ipv6 show dynamicport TCP
+netsh int ipv6 show dynamicport UDP 
